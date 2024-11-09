@@ -16,5 +16,5 @@ WORKDIR /app
 COPY --from=build /app/out .
 
 # Expose port 80 and run the application
-EXPOSE 80
+EXPOSE 5000
 ENTRYPOINT ["dotnet", "hello-world-api.dll"]
